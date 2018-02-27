@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.example.gabri.gabrielmontezumatalleruno.MainActivity">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="0.7">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@android:color/holo_orange_dark"
+            >
+
+
+
+                <ImageView
+                    android:id="@+id/im_image2"
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/cover"
+                    android:layout_weight=""/>
+
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="">
+
+                <TextView
+                    android:id="@+id/tv_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_text3"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignStart="@+id/tv_text3"
+                    android:text="@string/artista"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/tv_text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/verano"
+                    android:textStyle="bold"
+                    android:textSize="12dp"
+                    android:layout_below="@id/tv_text2"
+                    android:layout_marginLeft="10dp"
+
+                    />
+                <ImageView
+                    android:id="@+id/im_share"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/share"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+
+                     />
+
+                <ImageView
+                    android:id="@+id/im_heart"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/heart"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@id/im_share"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/im_like"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/like"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@id/im_heart"
+
+                    />
+
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        android:background="@android:color/darker_gray"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_margin="2dp"
+            android:background="@android:color/white"
+
+            >
+
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/im_img1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/cover_music_1"
+                    android:layout_weight="0.1"
+                    app:civ_border_width="2dp"
+
+
+                    />
+
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8">
+
+                <TextView
+                    android:id="@+id/tv_text5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/prisionero_de_tus_ojos"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_text6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/judas_priest"
+                    android:textStyle="bold"
+                    android:textSize="12dp"
+                    android:layout_below="@id/tv_text5"
+
+
+                    />
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/play"
+                android:layout_weight="0.1"
+                />
+
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_margin="1dp"
+                android:background="@android:color/white"
+
+                >
+
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/im_img2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/cover_music_2"
+                    android:layout_weight="0.1"
+                    app:civ_border_width="2dp"
+
+
+                    />
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8">
+
+                    <TextView
+                        android:id="@+id/tv_text7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Prisionero de tus ojos"
+                        android:textStyle="bold"
+                        android:textSize="17dp"
+
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tv_text8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="JUDAS PRIEST"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        android:layout_below="@id/tv_text7"
+
+
+                        />
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/play"
+                    android:layout_weight="0.1"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_margin="2dp"
+                android:background="@android:color/white"
+
+                >
+
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/im_img3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/cover_music_3"
+                    android:layout_weight="0.1"
+                    app:civ_border_width="2dp"
+
+
+                    />
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8">
+
+                    <TextView
+                        android:id="@+id/tv_text9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Prisionero de tus ojos"
+                        android:textStyle="bold"
+                        android:textSize="17dp"
+
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tv_text10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="JUDAS PRIEST"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        android:layout_below="@id/tv_text9"
+
+
+                        />
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/play"
+                    android:layout_weight="0.1"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_margin="2dp"
+                android:background="@android:color/white"
+
+                >
+
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/im_img7"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/cover_music_4"
+                    android:layout_weight="0.1"
+                    app:civ_border_width="2dp"
+
+
+                    />
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8">
+
+                    <TextView
+                        android:id="@+id/tv_text11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Prisionero de tus ojos"
+                        android:textStyle="bold"
+                        android:textSize="17dp"
+
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tv_text12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="JUDAS PRIEST"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        android:layout_below="@id/tv_text11"
+
+
+                        />
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/play"
+                    android:layout_weight="0.1"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_margin="2dp"
+                android:background="@android:color/white"
+
+                >
+
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/im_img5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/cover_music_5"
+                    android:layout_weight="0.1"
+                    app:civ_border_width="2dp"
+
+
+                    />
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8">
+
+                    <TextView
+                        android:id="@+id/tv_text13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Prisionero de tus ojos"
+                        android:textStyle="bold"
+                        android:textSize="17dp"
+
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tv_text14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="JUDAS PRIEST"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        android:layout_below="@id/tv_text13"
+
+
+                        />
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/play"
+                    android:layout_weight="0.1"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_margin="2dp"
+                android:background="@android:color/white"
+
+                >
+
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/im_img9"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/cover_music_4"
+                    android:layout_weight="0.1"
+                    app:civ_border_width="2dp"
+
+
+                    />
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8">
+
+                    <TextView
+                        android:id="@+id/tv_text15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Prisionero de tus ojos"
+                        android:textStyle="bold"
+                        android:textSize="17dp"
+
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tv_text16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="JUDAS PRIEST"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        android:layout_below="@id/tv_text15"
+
+
+                        />
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/play"
+                    android:layout_weight="0.1"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_margin="2dp"
+                android:background="@android:color/white"
+
+                >
+
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/im_img10"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/cover_music_4"
+                    android:layout_weight="0.1"
+                    app:civ_border_width="2dp"
+
+
+                    />
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8">
+
+                    <TextView
+                        android:id="@+id/tv_text17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Prisionero de tus ojos"
+                        android:textStyle="bold"
+                        android:textSize="17dp"
+
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tv_text18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="JUDAS PRIEST"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        android:layout_below="@id/tv_text17"
+
+
+                        />
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/play"
+                    android:layout_weight="0.1"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_margin="2dp"
+                android:background="@android:color/white"
+
+                >
+
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/im_img4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/cover_music_4"
+                    android:layout_weight="0.1"
+                    app:civ_border_width="2dp"
+
+
+                    />
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8">
+
+                    <TextView
+                        android:id="@+id/tv_text19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Prisionero de tus ojos"
+                        android:textStyle="bold"
+                        android:textSize="17dp"
+
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tv_text20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="JUDAS PRIEST"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        android:layout_below="@id/tv_text19"
+
+
+                        />
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/play"
+                    android:layout_weight="0.1"
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    </LinearLayout>
